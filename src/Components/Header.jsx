@@ -20,8 +20,8 @@ function Header() {
     }
 
     return (
-        <div className={` p-4 bg-[#263238] border-4 border-black z-50`}>
-                <div className={`w-full justify-end px-10 flex space-x-16 mt-2 bg-opacity-20 text-blue-600 ${banger.className}`}>
+        <div className={`w-full p-4 bg-[#263238] border-4 border-black z-50`}>
+                <div className={`w-full justify-end px-10 flex space-x-16 mt-2  text-blue-600 ${banger.className}`}>
                     <span className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/">Home</Link></span>
                     <span className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/aboutme">About Me</Link></span>
                     <span className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/projects">Projects</Link></span>

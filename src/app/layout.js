@@ -9,7 +9,8 @@ export default function RootLayout({ children }) {
       
       <body className='h-[100vh] overflow-hidden' >
       <Header />
-        {children}</body>
+        {children}
+      </body>
     </html>
   )
 }
