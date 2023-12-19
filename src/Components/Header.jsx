@@ -20,15 +20,13 @@ function Header() {
     }
 
     return (
-        <div className={` sticky p-4 bg-[#263238] border-4 border-black z-10`}>
-            <div className="z-20 flex justify-end mx-10">
-                <div className={`flex space-x-16 mt-2 bg-opacity-20 text-blue-600 ${banger.className}`}>
+        <div className={`sticky p-4 bg-[#263238] border-4 border-black z-10`}>
+                <div className={`w-full justify-end px-10 flex space-x-16 mt-2 bg-opacity-20 text-blue-600 ${banger.className}`}>
                     <span className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/">Home</Link></span>
                     <span className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/aboutme">About Me</Link></span>
                     <span className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/projects">Projects</Link></span>
                     <span className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/skills">Skills</Link></span>
                     <span className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/blogs">Blogs</Link></span>
-                </div>
             </div>
             {clicked &&
                 <div className="absolute z-50 p-2 bg-white rounded-full" style={{ left: position.x , top: position.y }}>
