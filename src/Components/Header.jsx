@@ -20,7 +20,7 @@ function Header() {
     }
 
     return (
-        <header className={` sticky p-4 bg-gray-900 text-white border-4 border-black z-10`}>
+        <header className={` sticky p-4 bg-[#263238] border-4 border-black z-10`}>
             <nav className="z-20 flex justify-end mx-10">
                 <ul className={`flex space-x-16 mt-2 bg-opacity-20 text-blue-600 ${banger.className}`}>
                     <li className="cursor-pointer" onClick={(e) => handleLinkClick(e)}><Link href="/">Home</Link></li>
