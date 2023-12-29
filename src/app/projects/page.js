@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Orbitron } from "next/font/google"
+import Image from 'next/image';
 
 const orbitron = Orbitron({ subsets: ['latin'], weight: '400' });
 
@@ -39,13 +40,22 @@ function Projects() {
     ];
 
     return (
-        <section id="Project" className={`h-full p-8 text-white bg-cover bg-center ${orbitron.className}`} style={{ backgroundImage: `url('/projectbg.png')`}}>
+        <section id="Project" className={`h-full p-8 text-white bg-cover bg-center ${orbitron.className}`} >
+             <div className="absolute top-0 left-0 w-full h-full -z-10">
+      <Image
+        src="/projectbg.png"
+        width={1000}
+        height={1000}
+        alt="Background"
+        className='h-full w-full'
+      />
+    </div>
     <h2 className="text-2xl font-bold mb-4">Now Showing</h2>
     <div className="h-[75vh] pr-7 p-4 grid grid-cols-3 gap-6 overflow-y-scroll no-scrollbar">
         {projects.map((project, index) => (
             <Link href={`/projects/projects?id=${project.id}`} key={project.id}>
                 <div className=" border-4 h-[100%] text-black bg-white bg-opacity-50 shadow-lg rounded-md overflow-hidden hover:scale-105 transition-transform duration-300 transform">
-                    <img src={project.image} alt={project.title} className="w-full h-[70%] opacity-80" />
+                    <Image src={project.image} alt={project.title} height={300} width={400} className="w-full h-[70%] opacity-80" />
                     <h3 className="p-2">{project.title}</h3>
                     <p className="p-2">{project.tagline}</p>
                 </div>

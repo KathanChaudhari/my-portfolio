@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const chapters = [
@@ -34,13 +35,13 @@ const chapters = [
     content: (
       <p>
 <p>
-My path to full-stack development wasn't accidental; it started with a burning question: how do websites work? This curiosity led me straight into the heart of web development. I chose to learn JavaScript because I wanted to understand the magic behind web pages.
+I am not accidental full-stack developer; it started with a question: how do these websites work? curiosity led me straight into web development. I chose to learn JavaScript because I wanted to understand the magic behind web pages.
 </p><br /><p>
-When I first encountered React.js, it felt like a puzzle. It was new and challenging, not just another tool but a whole new way of thinking for me. I dived into it, and slowly, it started making sense. It was like learning to speak a language that could turn ideas into something real and functional on the web.
+When I first encountered React.js, it felt like a puzzle(more like spaghetti). It was new and challenging, not just another tool but a whole new way of thinking for me. I dived into it, and slowly, it started making sense. It was like learning to speak a language that could turn ideas into something real and functional(on the webofc).
 </p><br /><p>
-Working on projects, either for clients or just for myself, was where I really learned the ropes. Each project was a new adventure. Some seemed easy at first but got tricky as I dug deeper. But that's how I grew — tackling one challenge at a time.
+Working on projects, either for clients or just for myself where I really learned the ropes. Each project was a new adventure. Some seemed easy at first but got tricky as I dug deeper. But that's how I grew — tackling one challenge at a time.
 </p><br /><p>
-My love for movies and anime also played a part. They kept my creativity alive and helped me think outside the box when solving problems. And then there's writing — what started as a hobby became a way to share my experiences and connect with others.
+My love for movies and anime also played a part. They kept my creativity alive and helped me think outside the box when solving problems. then there's writing — what started as a hobby became a way to share my experiences and connect with others.
 </p><br />
 <p>Now, as I keep moving forward in tech, my goal is simple: keep creating, keep learning, and enjoy every bit of it. Every project is a piece of my story, from a curious kid in a village to a developer exploring the endless possibilities of the digital world.</p>
   </p>
@@ -50,17 +51,17 @@ My love for movies and anime also played a part. They kept my creativity alive a
     title: "Chapter 1: Me, from Childhood to College",
     content: (
       <p>
-       <p> My story begins in the warmth of my grandparents' home, where I spent my early years. Days were filled with stories of epic battles from the Mahabharata and Ramayana, and nights under the stars, learning about constellations and the mysteries of the universe. These stories ignited a spark in me, a fascination with puzzles and mysteries that required a keen mind to unravel.
+       <p> My story begins at my grandparents' home, where I spent my early years. Where I used computer for first time. Even, just for playing GTA. IT was fun!! and that's how my curipsity grew.
        </p><br /><p>
-As I grew older, my love for stories transitioned into a passion for mathematics. It was a subject that seemed to speak to me, a language of logic and problem-solving that I naturally gravitated towards. My parents, both teachers, instilled in me a sense of discipline from a young age. This helped me balance my growing interest in computer games and my academic responsibilities.
+As I grew older, I got passionate for mathematics. It was a subject that seemed to understand me, a language of logic and problem-solving that I naturally like. My parents, both teachers, made me disciplined chiled from a young age. This helped me balance my growing interest in computer games and my academic responsibilities.
 </p><br /><p>
 Life took a significant turn when we moved from our village to the city, and then to a bigger city. Each move brought new experiences and exposed me to diverse cultures. As an only child, I never experienced the loneliness of leaving home since my family always moved together. But with each relocation, I found myself adapting to new environments, each with its unique challenges and opportunities.
 </p><br /><p>
-The most profound change came with my friends in the big city. I was a curious kid, always asking "why" and "how." This curiosity grew as I did, nurtured by friendships that challenged me to think differently and embrace a broader perspective.
+The most profound change came with my friends in the big city. I was a curious kid, always asking "why" and "how." This curiosity grew as I did, with likeminded friends that challenged me to think differently and embrace a broader perspective.
 </p><br /><p>
 School wasn't always easy for me. As an introverted student, I faced hurdles in communication and social interaction. However, as I grew older, I learned to open up, to express myself better, and to adapt to new situations. This personal growth was as important as my academic achievements.
 </p><br /><p>
-My journey into computer science was almost written in the stars. My fascination with computer games, combined with my love for mathematics, made it a natural choice for my college major. College was where the pieces started to come together. I delved into languages, networks, and the intricacies of how websites were created. Initially, I dreamt of starting my own company, but without clear guidance, it felt like shooting in the dark.
+My journey into computer science was almost written in the stars(lol! what a line, it was only thing I knew! so..). My fascination with computer games, combined with my love for mathematics, made it a natural choice for my college major. College was where the pieces started to come together. I delved into languages, networks, and the learned how websites were created. Initially, I dreamt of starting my own company, but without clear guidance, it felt like shooting in the dark.
 </p><br /><p>
 Then came COVID, an unexpected twist that brought me back to my village. This period was a blend of introspection and relaxation — devouring novellas, binge-watching anime, and taking a break from the relentless pursuit of career goals. It was a much-needed pause, a time to recharge and refocus.
 </p><br /><p>
@@ -69,8 +70,33 @@ As the world started to find its rhythm again, so did I. My interest in React.js
       </p>
     )
   },
+  
   {
-    title: "Chapter 2: Professionalism",
+    title: "Chapter 2: Coding the magic",
+    content: (
+      <p>
+        <p>
+       My journey in the world of coding began with curiosity. As a college student, I dabbled in C++, Java, and even Python, each language offering a glimpse into the vast universe of programming. Python was fun, especially with projects and leetcode challenges, but it didn’t quite stick. Then, there was a phase of fascination with Unity for game development and a deep dive into networking and cybersecurity, exploring vulnerabilities and completing security labs. It was a wild ride, filled with learning and discovery.
+       </p><br /><p>
+But the true game-changer was JavaScript. It started with a friend's suggestion to try React.js. He promised it would be a learning opportunity and a chance to earn while doing so. How could I say no? With my background in various programming languages, picking up React.js felt natural. It’s been two years since, and what a ride it’s been!
+</p><br /><p>
+React.js was more than just a technology; it was a gateway. It simplified the complexity of web development, making it easy to see results and meet client needs. Its structured nature resonated with me. I realized I could understand anyone's React code, a testament to its clarity and organization.
+</p><br /><p>
+Then came Next.js, the perfect companion to React. It handled the heavier lifting for live websites – images, routing, and more. It wasn’t just about making things easier; it was about making them better. The image optimization and server-side components in Next.js were particularly impressive.
+</p><br /><p>
+I got into backend development, where Node.js was easy choices. With my Python experience, learning Node.js was a smooth transition. It complemented my frontend work beautifully, completing the full-stack picture.
+</p><br /><p>
+I Learned Tailwindcss for styling website. Moving from regular CSS to Tailwind, I found an easy-to-use and efficient way to style websites.
+</p><br /><p>
+To me, coding is like casting spells. You imagine, and then create. It's about turning ideas into reality, visible and functional to the world. It's about storytelling, opening virtual shops, and sharing your talents. This magic of coding is profound – understanding the binary language of computers, the intricacies of TCP/UDP, it's all astonishing.
+</p><br /><p>
+As a developer, I see myself as a magician. Whether it’s bringing 3D worlds to life with Three.js, creating fluid simulations, or integrating MediaPipe, each project is a spell successfully cast. I may not be a veteran magician yet, but in the realm of code, I'm crafting my own kind of magic, and the world is starting to take notice.
+</p><br />
+      </p>
+    )
+  },
+  {
+    title: "Chapter 3: Professionalism",
     content: (
       <p>
         <p>
@@ -84,33 +110,9 @@ Over time, I’ve gotten better at coding. I’ve learned how to organize my cod
 </p><br /><p>
 I’ve had my fair share of tough times, especially when things don’t work the way I expect. Sometimes, stepping back and taking a break helps me think of new solutions. Working in startups means I don’t deal with office politics much, which is nice.
 </p><br /><p>
-I haven’t had a traditional mentor, but I’ve learned a lot from friends, colleagues, and online. Right now, I'm working part-time on the GoSign project as a frontend developer and doing some freelance work on the side.
+I haven’t had a mentor, but I’ve learned a lot from friends, colleagues, and online. Right now, I'm working part-time on the GoSign project as a frontend developer and doing some freelance work on the side.
 </p><br /><p>
 Looking ahead, I'm not sure exactly what the future holds. But I’m excited to keep learning and trying new things in web development. There’s always more to learn and more magic to make with code.
-</p><br />
-      </p>
-    )
-  },
-  {
-    title: "Chapter 3: Coding the magic",
-    content: (
-      <p>
-        <p>
-       My journey in the world of coding began with curiosity. As a college student, I dabbled in C++, Java, and even Python, each language offering a glimpse into the vast universe of programming. Python was fun, especially with projects and leetcode challenges, but it didn’t quite stick. Then, there was a phase of fascination with Unity for game development and a deep dive into networking and cybersecurity, exploring vulnerabilities and completing security labs. It was a wild ride, filled with learning and discovery.
-       </p><br /><p>
-But the true game-changer was JavaScript. It started with a friend's suggestion to try React.js. He promised it would be a learning opportunity and a chance to earn while doing so. How could I say no? With my background in various programming languages, picking up React.js felt natural. It’s been two years since, and what a ride it’s been!
-</p><br /><p>
-React.js was more than just a technology; it was a gateway. It simplified the complexity of web development, making it easy to see results and meet client needs. Its structured nature resonated with me. I realized I could understand anyone's React code, a testament to its clarity and organization.
-</p><br /><p>
-Then came Next.js, the perfect companion to React. It handled the heavier lifting for live websites – images, routing, and more. It wasn’t just about making things easier; it was about making them better. The image optimization and server-side components in Next.js were particularly impressive.
-</p><br /><p>
-My journey led me to backend development, where Node.js awaited. Armed with my Python experience, learning Node.js was a smooth transition. It complemented my frontend work beautifully, completing the full-stack picture.
-</p><br /><p>
-Styling is the magic touch that brings a website to life, and Tailwind CSS became my wand of choice. Moving from regular CSS to Tailwind, I found an easy-to-use and efficient way to style websites.
-</p><br /><p>
-To me, coding is like casting spells. You imagine, and then create. It's about turning ideas into reality, visible and functional to the world. It's about storytelling, opening virtual shops, and sharing your talents. This magic of coding is profound – understanding the binary language of computers, the intricacies of TCP/UDP, it's all astonishing.
-</p><br /><p>
-As a developer, I see myself as a budding magician. Whether it’s bringing 3D worlds to life with Three.js, creating fluid simulations, or integrating MediaPipe, each project is a spell successfully cast. I may not be a veteran magician yet, but in the realm of code, I'm crafting my own kind of magic, and the world is starting to take notice.
 </p><br />
       </p>
     )
@@ -120,15 +122,15 @@ As a developer, I see myself as a budding magician. Whether it’s bringing 3D w
     content: (
       <p>
         <p>
-       Beyond the world of coding, my life is rich with various hobbies and interests that shape who I am. Fiction and political stories captivate me the most. The magical world of Harry Potter was my first encounter with the enchanting power of storytelling. It opened my eyes to a universe beyond my imagination. Then came "Naruto," which profoundly changed the way I think and inspired me to strive for greatness.
+       Beyond the world of coding, I have lot's of hobbies and interests that shape who I am. Fiction and political stories captivate me the most. The magical world of Harry Potter was my first encounter with the power of storytelling. It opened my eyes to a universe beyond my imagination. Then came "Naruto," which profoundly changed the way I think and inspired me to be better.
        </p><br /><p>
-My reading tastes are eclectic. I'm drawn to stories of competition and magic fiction. Harry Potter remains a favorite, but in the world of manhwas, I find myself engrossed in sweet, simple love stories. These readings are more than entertainment; they offer me different perspectives on life and a way to live through the eyes of diverse characters. As someone who tends to overthink, reading is my refuge, a calming escape into other worlds.
+My reading tastes are . I'm drawn to stories ofeclectic competition and magic fiction. Harry Potter remains a favorite, but in the world of manhwas, I love sweet, simple love stories. These readings are more than entertainment; they offer me different perspectives on life and a way to live through the eyes of diverse characters. As someone who tends to overthink, reading is a calming escape into other worlds.
 </p><br /><p>
-Exploring new things is like a personal adventure. It involves roaming around, discovering new places, and participating in various activities. Recently, I've immersed myself in poetry readings, music festivals, hiking, film societies, and book clubs. I’m always up for new experiences, whether it’s joining a dance class, attending a speaking event, or enjoying sports.
+Exploring new things is like a personal adventure. It involves roaming around, discovering new places, and participating in various activities. Recently, I've immersed myself in open mic, music festivals, hiking, film societies, and book clubs. I’m always up for new experiences, whether it’s joining a dance class, attending a speaking event, or enjoying sports.
 </p><br /><p>
 Speaking of sports, my interests are varied. While I don’t follow every detail, I'm drawn to the excitement of competition. Tennis grand slams, major golf tournaments, cricket matches, and even skating captivate me. These sports, in their own way, add a different kind of excitement to my life.
 </p><br /><p>
-Although these hobbies may not directly contribute to my career as a developer, they are an integral part of my life. They enrich my experiences, broaden my understanding, and offer a balance to my professional pursuits. These interests don’t just fill my time; they enhance my journey as a person, as a human, living a life that’s not just about coding, but about experiencing the world in its full spectrum.
+Although these hobbies may not directly contribute to my career as a developer, they are part of my life. They enrich my experiences, broaden my understanding, and offer a balance to my professional pursuits. These interests don’t just fill my time; they enhance my journey as a person, as a human, living a life that’s not just about coding, but about experiencing the world in its full spectrum.
 </p><br />
       </p>
     )
@@ -160,7 +162,7 @@ function AboutMe() {
 
   useEffect(() => {
     setAnimatePageTurn(true);
-    const timer = setTimeout(() => setAnimatePageTurn(false), 800);  // Reset after animation duration
+    const timer = setTimeout(() => setAnimatePageTurn(false), 800);  
     return () => clearTimeout(timer);
   }, [currentChapter]);
   
@@ -179,7 +181,6 @@ function AboutMe() {
   const renderPageNumbers = () => {
     const pages = [];
 
-    // Always add the first page
     pages.push(
       <span
         key="start"
@@ -190,12 +191,10 @@ function AboutMe() {
       </span>
     );
 
-    // Add dots if the current chapter is more than 1 away from the first
     if (currentChapter > 2) {
       pages.push(<span key="firstDot" className="px-2">...</span>);
     }
 
-    // Add previous chapter if it's not the first one and not the second one (since the first page will always show up)
     if (currentChapter > 1) {
       pages.push(
         <span
@@ -208,7 +207,6 @@ function AboutMe() {
       );
     }
 
-    // If current chapter is neither first nor last, display it
     if (currentChapter !== 0 && currentChapter !== chapters.length - 1) {
       pages.push(
         <span
@@ -221,7 +219,6 @@ function AboutMe() {
       );
     }
 
-    // Add next chapter if it's not the last one and not the one before the last (since the last page will always show up)
     if (currentChapter !== chapters.length - 1 && currentChapter !== chapters.length - 2) {
       pages.push(
         <span
@@ -234,12 +231,10 @@ function AboutMe() {
       );
     }
 
-    // Add dots if the current chapter is more than 1 away from the last and is not the one before the last
     if (currentChapter < chapters.length - 3) {
       pages.push(<span key="lastDot" className="px-2">...</span>);
     }
 
-    // Always add the last page
     pages.push(
       <span
         key="end"
@@ -256,18 +251,21 @@ function AboutMe() {
 
 
   return (
-    <section id="about" className="h-full flex flex-col items-center  w-full"
-    style={{ 
-      backgroundImage: 'url(/bookbg2.png)', 
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat'
-      
-    }}>
+    <section id="about" className="h-full flex flex-col items-center w-full relative">
+    <div className="absolute top-0 left-0 w-full h-full -z-10">
+      <Image
+        src="/bookbg2.png"
+        width={1000}
+        height={1000}
+        alt="Background"
+        className='h-full w-full'
+      />
+    </div>
       <div className=" bg-gray-100 p-8 my-3  w-[40%]  shadow-lg mx-auto rounded-xl">
         <h2 className="text-2xl font-serif mb-4">{chapters[currentChapter].title}</h2>
         <div 
   className={`text-lg font-body mb-4 custom-scrollbar overflow-y-auto px-4 ${animatePageTurn ? 'page-turn-animation' : ''}`} 
-  style={{ maxHeight: '400px' }}
+  style={{ maxHeight: '60vh' }}
 >
   {chapters[currentChapter].content}
 </div>

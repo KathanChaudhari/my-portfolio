@@ -15,10 +15,10 @@ function Skills() {
         specialized: [
             { name: "React", description: "A JavaScript library for building user interfaces. It allows for creating reusable UI components." },
             { name: "Node.js", description: "A JavaScript runtime built on Chrome's V8 JavaScript engine. It allows for building scalable network applications." },
-            { name: "Next.js", description: "A React framework that enables server-side rendering and generating static websites for React based web applications." },
             { name: "GraphQL", description: "A query language for your API, and a runtime for executing those queries with your existing data." },
             { name: "TypeScript", description: "A superset of JavaScript that adds optional static typing. It helps catch issues early and enhances the development experience." },
-            { name: "mongoDB", description: "A NoSQL database that uses JSON-like documents with optional schemas." }
+            { name: "mongoDB", description: "A NoSQL database that uses JSON-like documents with optional schemas." },
+            { name: "Next.js", description: "A React framework that enables server-side rendering and generating static websites for React based web applications." }
         ]
     };
 

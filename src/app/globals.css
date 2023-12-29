@@ -14,7 +14,6 @@
 .book:hover {
     transform: rotateY(10deg);
 }
-/* For WebKit browsers */
 .custom-scrollbar::-webkit-scrollbar {
     width: 2px;
 }
@@ -27,7 +26,6 @@
     background-color: darkgrey;
 }
 
-/* For Firefox */
 .custom-scrollbar {
     scrollbar-width: thin;
     scrollbar-color: transparent transparent; 
@@ -76,11 +74,9 @@
 
 
 @layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
       display: none;
   }
- /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */

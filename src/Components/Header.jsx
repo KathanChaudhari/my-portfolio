@@ -22,11 +22,11 @@ function Header() {
     return (
         <div style={{ padding: '16px', backgroundColor: '#263238', border: '4px solid black', zIndex: 50 }}>
     <div className={`${banger.className}`} style={{ width: '100%', justifyContent: 'flex-end', padding: '0 40px', display: 'flex', marginTop: '8px', color: '#007bff' } }>
-        <span style={{ cursor: 'pointer', marginRight: '24px' }} onClick={(e) => handleLinkClick(e)}><Link href="/">Home</Link></span>
-        <span style={{ cursor: 'pointer', marginRight: '24px' }} onClick={(e) => handleLinkClick(e)}><Link href="/aboutme">About Me</Link></span>
-        <span style={{ cursor: 'pointer', marginRight: '24px' }} onClick={(e) => handleLinkClick(e)}><Link href="/projects">Projects</Link></span>
-        <span style={{ cursor: 'pointer', marginRight: '24px' }} onClick={(e) => handleLinkClick(e)}><Link href="/skills">Skills</Link></span>
-        <span style={{ cursor: 'pointer', marginRight: '24px' }} onClick={(e) => handleLinkClick(e)}><Link href="/blogs">Blogs</Link></span>
+        <span style={{ cursor: 'pointer', marginRight: '40px' }} onClick={(e) => handleLinkClick(e)}><Link href="/">Home</Link></span>
+        <span style={{ cursor: 'pointer', marginRight: '40px' }} onClick={(e) => handleLinkClick(e)}><Link href="/aboutme">About Me</Link></span>
+        <span style={{ cursor: 'pointer', marginRight: '40px' }} onClick={(e) => handleLinkClick(e)}><Link href="/projects">Projects</Link></span>
+        <span style={{ cursor: 'pointer', marginRight: '40px' }} onClick={(e) => handleLinkClick(e)}><Link href="/skills">Skills</Link></span>
+        <span style={{ cursor: 'pointer', marginRight: '40px' }} onClick={(e) => handleLinkClick(e)}><Link href="/blogs">Blogs</Link></span>
     </div>
     {clicked &&
         <div style={{ position: 'absolute', zIndex: 50, padding: '8px', backgroundColor: 'white', borderRadius: '9999px', left: position.x, top: position.y }}>

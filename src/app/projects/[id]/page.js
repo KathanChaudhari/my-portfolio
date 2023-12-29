@@ -14,6 +14,7 @@ import { GoChevronLeft, GoChevronRight, GoArrowUpLeft,GoX } from "react-icons/go
 import { MdFullscreen } from "react-icons/md";
 
 import { Roboto } from "next/font/google"
+import Image from 'next/image';
 
 const roboto = Roboto({ subsets: ['latin'], weight: '400' });
 
@@ -39,7 +40,7 @@ As the project move forword, it became apparent that a mobile-centric approach w
       
 My first main task was to develop a user-friendly chatbot interface that could effectively handle responses and manage various tasks, such as prompt suggestions and maintaining different IDs for distinct conversations, as well as allow user to rename, delete conversation or let jump user through different conversation.
       
-Another exciting feature I worked on was the development of a sign game. This innovative game required users to sign words, which was then captured through video recording using the device's camera. Initially, the process of starting and stopping the recording manually was not user-friendly. To make it more fun experience, I implemented a timer-based solution where the video recording would start and stop automatically at specified intervals. Further features included integrating Google's UserMedia technology, which enabled the detection of hand presence and the collection of hand landmarks. This data was crucial for building and refining our user model. 
+Another exciting feature I worked on was the development of a sign game. This innovative game required users to sign words, which was then captured through video recording using the device's camera. Initially, the process of starting and stopping the recording manually was not user-friendly. To make it more fun experience, I implemented a timer-based solution where the video recording would start and stop automatically at specified intervals. Further features included integrating Google's Mediapipe technology, which enabled the detection of hand presence and the collection of hand landmarks. This data was crucial for building and refining our user model. 
       
 I also took on the task of creating a leaderboard and user profiles, focusing on the UI aspects of these features. The web app's also offers multilingual support, allowing users to switch languages through the settings. Additionally, I implemented a dark mode and light mode, adapting the color scheme to suit user preferences.
       
@@ -203,7 +204,7 @@ return (
           {project.images.map((image, index) => (
             <SwiperSlide key={index}>
               <div className="relative group  h-[90%]">
-                <img src={image.src} alt={image.title} className="h-full object-contain" />
+                <Image src={image.src} alt={image.title} height={600} width={600} className="h-full w-auto object-contain" />
                 <MdFullscreen  
                   className="absolute top-2 right-2 h-6 w-6 text-black bg-white rounded-full cursor-pointer opacity-0 group-hover:opacity-100"
                   onClick={() => handleFullScreen(index)}
@@ -222,11 +223,11 @@ return (
       </p>
     </div>
       {isFullScreen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex justify-center items-center blur-none ">
-          <GoX className="absolute top-5 right-5 h-8 w-8 p-2 bg-white rounded-full text-black cursor-pointer" onClick={closeFullScreen} />
+        <div className="fixed w-full inset-0 bg-black bg-opacity-90 z-50 flex justify-between items-center blur-none ">
           <GoChevronLeft className="h-8 w-8 bg-black p-2 rounded-full text-white cursor-pointer pr-2" onClick={prevImage} />
-          <img src={project.images[currentImageIndex].src} alt={project.images[currentImageIndex].title} className="px-4 max-h-full max-w-[90%] " />
+          <Image src={project.images[currentImageIndex].src}  layout='fill' objectFit='contain' alt={project.images[currentImageIndex].title} className="px-20   " />
           <GoChevronRight className="h-8 w-8 bg-black p-2 rounded-full text-white cursor-pointer" onClick={nextImage} />
+          <GoX className="absolute top-5 right-5 h-8 w-8 p-2 bg-white rounded-full text-black cursor-pointer" onClick={closeFullScreen} />
         </div>
       )}
   </div>
