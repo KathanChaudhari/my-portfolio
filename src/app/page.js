@@ -4,20 +4,15 @@ import Head from "next/head";
 import { Bangers } from "next/font/google";
 import Image from "next/image";
 const banger = Bangers({ subsets: ['latin'], weight: '400' });
-import FluidSimulation from "fluid-simulation-react"
 
 export default function Home() {
-   const customColors = [
-    [1, 1, 0], // Yellow
-    [0, 1, 1]  // Cyan
-  ];
+   
   return (
     <div className="h-full overflow-hidden">
       <Head>
         <title>Full-stack developer </title>
         <meta name="description" content="Your Portfolio Description" />
       </Head>
-      {/* <FluidSimulation color={customColors}/> */}
       <section className="hero h-screen flex w-full justify-center items-center text-center relative">
   <div className="absolute top-0 left-0 w-full h-full -z-10">
     <Image
