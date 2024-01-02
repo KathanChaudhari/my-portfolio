@@ -261,17 +261,17 @@ function AboutMe() {
         className='h-full w-full'
       />
     </div>
-      <div className=" bg-gray-100 p-8 my-3  w-[40%]  shadow-lg mx-auto rounded-xl">
+      <div className=" bg-gray-100 p-8 my-3 w-[90%]  md:w-[40%]  shadow-lg mx-auto rounded-xl">
         <h2 className="text-2xl font-serif mb-4">{chapters[currentChapter].title}</h2>
         <div 
-  className={`text-lg font-body mb-4 custom-scrollbar overflow-y-auto px-4 ${animatePageTurn ? 'page-turn-animation' : ''}`} 
+  className={`text-base md:text-lg font-body mb-4 custom-scrollbar overflow-y-auto px-4 ${animatePageTurn ? 'page-turn-animation' : ''}`} 
   style={{ maxHeight: '60vh' }}
 >
   {chapters[currentChapter].content}
 </div>
 
         
-        <div className="flex justify-end items-center mt-4">
+        <div className="flex text-sm md:text-base justify-end items-center mt-4">
           <button 
             className="mr-4" 
             onClick={handlePreviousChapter}
@@ -279,7 +279,7 @@ function AboutMe() {
           >
             &lt; Previous
           </button>
-          <div className="flex space-x-2">
+          <div className="flex md:space-x-2">
             {renderPageNumbers()}
           </div>
           <button 

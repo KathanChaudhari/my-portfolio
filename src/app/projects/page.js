@@ -51,7 +51,7 @@ function Projects() {
       />
     </div>
     <h2 className="text-2xl font-bold mb-4">Now Showing</h2>
-    <div className="h-[75vh] pr-7 p-4 grid grid-cols-3 gap-6 overflow-y-scroll no-scrollbar">
+    <div className="h-[75vh] pr-7 p-4 grid md:grid-cols-3 gap-6 overflow-y-scroll no-scrollbar">
         {projects.map((project, index) => (
             <Link href={`/projects/projects?id=${project.id}`} key={project.id}>
                 <div className=" border-4 h-[100%] text-black bg-white bg-opacity-50 shadow-lg rounded-md overflow-hidden hover:scale-105 transition-transform duration-300 transform">

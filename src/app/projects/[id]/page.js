@@ -175,7 +175,7 @@ if (!project) return <div>Project not found</div>;
 
 return (
   <div className={`h-full bg-blue-200 `}>
-    <div className={`h-[87vh] p-8 relative overflow-y-scroll no-scrollbar ${isFullScreen ? "blur-md":""}`}>
+    <div className={`h-[87vh]  p-2 md:p-8 relative overflow-y-scroll no-scrollbar ${isFullScreen ? "blur-md":""}`}>
       <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
       <div className="relative">
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
@@ -203,17 +203,17 @@ return (
         >
           {project.images.map((image, index) => (
             <SwiperSlide key={index}>
-              <div className="relative group  h-[90%]">
-                <Image src={image.src} alt={image.title} height={600} width={600} className="h-full w-auto object-contain" />
+              <div className="relative group h-[90%]">
+                <Image src={image.src} alt={image.title} height={600} width={600} className="md:h-full h-auto w-full md:w-auto  md:object-contain" />
                 <MdFullscreen  
-                  className="absolute top-2 right-2 h-6 w-6 text-black bg-white rounded-full cursor-pointer opacity-0 group-hover:opacity-100"
+                  className="absolute bottom-0 right-12 md:top-2 md:right-2 h-6 w-6 text-black bg-white rounded-full cursor-pointer opacity-100 md:opacity-0 group-hover:opacity-100"
                   onClick={() => handleFullScreen(index)}
                 />
               </div>
               <p className="text-center">{image.title}</p>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> 
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
           <GoChevronRight className='swiper-button-next h-8 w-8 rounded-full bg-black text-white cursor-pointer' />
         </div>
@@ -224,9 +224,9 @@ return (
     </div>
       {isFullScreen && (
         <div className="fixed w-full inset-0 bg-black bg-opacity-90 z-50 flex justify-between items-center blur-none ">
-          <GoChevronLeft className="h-8 w-8 bg-black p-2 rounded-full text-white cursor-pointer pr-2" onClick={prevImage} />
-          <Image src={project.images[currentImageIndex].src}  layout='fill' objectFit='contain' alt={project.images[currentImageIndex].title} className="px-20   " />
-          <GoChevronRight className="h-8 w-8 bg-black p-2 rounded-full text-white cursor-pointer" onClick={nextImage} />
+          <GoChevronLeft className="md:h-8 md:w-8 h-4 w-4 md:bg-black z-20 bg-white rounded-full text-black md:text-white cursor-pointer" onClick={prevImage} />
+          <Image src={project.images[currentImageIndex].src}  layout='fill'  alt={project.images[currentImageIndex].title} className="object-contain px-4 md:px-20   " />
+          <GoChevronRight className="md:h-8 md:w-8 h-4 w-4 md:bg-black z-20 bg-white rounded-full text-black md:text-white cursor-pointer" onClick={nextImage} />
           <GoX className="absolute top-5 right-5 h-8 w-8 p-2 bg-white rounded-full text-black cursor-pointer" onClick={closeFullScreen} />
         </div>
       )}

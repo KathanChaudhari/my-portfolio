@@ -27,7 +27,7 @@ function Skills() {
     return (
         <section id="skills" className={`relative h-full flex ${crimson.className}`}>
         <div className="background-layer"></div>
-            <div className="relative w-full ">
+            <div className="hidden md:flex md:relative w-full ">
 
                 <div 
                     className="absolute top-[30%] left-[28%] -translate-x-50% -translate-y-50% w-40 h-40 rounded-full bg-[#FFD700] text-white text-center flex items-center justify-center cursor-pointer transition-transform transform hover:scale-105"
@@ -54,7 +54,6 @@ function Skills() {
                     );
                 })}
 
-                {/* Skill Details */}
                 {hoveredSkill && (
                     <div className="absolute right-10 top-10 w-1/4 min-h-1/4 bg-white p-4 border border-gray-300 rounded-md shadow-lg">
                         <h3 className="font-bold mb-2">{hoveredSkill.name}</h3>
@@ -62,6 +61,15 @@ function Skills() {
                     </div>
                 )}
             </div>
+
+            <div className='w-full  flex flex-col items-center justify-center md:hidden gap-4'>
+    {skills.specialized.map(skill => (
+        <div key={skill.name} className='text-2xl font-semibold'>
+            {skill.name}
+        </div>
+    ))}
+</div>
+
         </section>
     );
 }
